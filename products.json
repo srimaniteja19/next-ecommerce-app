@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Led Lights",
+    "description": "Best LED Lights, They can lit up your house.",
+    "price": 50.0,
+    "image": "/images/led2.jpeg"
+  },
+  {
+    "title": "Smart Bulbs",
+    "description": "he new Smart bulbs, control with your mobile</p>",
+    "price": 220.0,
+    "image": "/images/bulb.jpg"
+  },
+  {
+    "title": "Mobile Phones",
+    "description": "You can find every company from the mobile brands.",
+    "price": 20000.0,
+    "image": "/images/mobile.jpeg"
+  },
+  {
+    "title": "Laptops",
+    "description": "The best laptops at discounted price, only here.",
+    "price": 50000.0,
+    "image": "/images/laptop.jpeg"
+  }
+]
