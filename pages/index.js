@@ -2,7 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import products from "../products.json";
-
+import initiateCheckout from "../lib/payments";
 export default function Home() {
   console.log(products);
 
@@ -21,9 +21,9 @@ export default function Home() {
 
         <ul className={styles.grid}>
           {products.map((product) => {
-            const { title, image, description, price } = product;
+            const { title, image, description, price, id } = product;
             return (
-              <li className={styles.card} key={product.title}>
+              <li className={styles.card} key={product.id}>
                 <a href="#">
                   <img src={image} alt="led light" />
                   <h2>{title}</h2>
@@ -32,6 +32,21 @@ export default function Home() {
                   </p>
                   <p>{description}</p>
                 </a>
+                <button
+                  className={styles.button}
+                  onClick={() =>
+                    initiateCheckout({
+                      lineItems: [
+                        {
+                          price: id,
+                          quantity: 1,
+                        },
+                      ],
+                    })
+                  }
+                >
+                  Buy Now
+                </button>
               </li>
             );
           })}

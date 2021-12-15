@@ -3,24 +3,28 @@
     "title": "Led Lights",
     "description": "Best LED Lights, They can lit up your house.",
     "price": 50.0,
-    "image": "/images/led2.jpeg"
+    "image": "/images/led2.jpeg",
+    "id": "price_1K6av0SBVvBSOjYmlTkrh0Il"
   },
   {
     "title": "Smart Bulbs",
     "description": "he new Smart bulbs, control with your mobile</p>",
     "price": 220.0,
-    "image": "/images/bulb.jpg"
+    "image": "/images/bulb.jpg",
+    "id": "price_1K6awMSBVvBSOjYm8l5GxB38"
   },
   {
     "title": "Mobile Phones",
     "description": "You can find every company from the mobile brands.",
     "price": 20000.0,
-    "image": "/images/mobile.jpeg"
+    "image": "/images/mobile.jpeg",
+    "id": "price_1K6awnSBVvBSOjYmt305G1p1"
   },
   {
     "title": "Laptops",
     "description": "The best laptops at discounted price, only here.",
     "price": 50000.0,
-    "image": "/images/laptop.jpeg"
+    "image": "/images/laptop.jpeg",
+    "id": "price_1K6ax6SBVvBSOjYmyCV4Fqrz"
   }
 ]
