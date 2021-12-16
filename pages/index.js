@@ -1,10 +1,11 @@
+import { useState } from "react";
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import products from "../products.json";
-import initiateCheckout from "../lib/payments";
+import useCart from "../hooks/use-cart";
 export default function Home() {
-  console.log(products);
+  const { subtotal, totalItems, addToCart, checkout } = useCart();
 
   return (
     <div className={styles.container}>
@@ -34,18 +35,9 @@ export default function Home() {
                 </a>
                 <button
                   className={styles.button}
-                  onClick={() =>
-                    initiateCheckout({
-                      lineItems: [
-                        {
-                          price: id,
-                          quantity: 1,
-                        },
-                      ],
-                    })
-                  }
+                  onClick={() => addToCart({ id })}
                 >
-                  Buy Now
+                  Add To Cart
                 </button>
               </li>
             );

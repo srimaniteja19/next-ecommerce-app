@@ -9,37 +9,23 @@
 }
 
 .main {
-  padding: 5rem 0;
+  padding: 4rem 0;
   flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-.title a {
-  color: #0070f3;
-  text-decoration: none;
-}
-
-.title a:hover,
-.title a:focus,
-.title a:active {
-  text-decoration: underline;
+  text-align: center;
 }
 
 .title {
   margin: 0;
   line-height: 1.15;
   font-size: 3rem;
-}
-
-.title,
-.description {
-  text-align: center;
+  padding: 0;
 }
 
 .description {
-  line-height: 1.5;
   font-size: 1.5rem;
 }
 
@@ -50,10 +36,10 @@
   flex-wrap: wrap;
   max-width: 800px;
   margin-top: 3rem;
+  gap: 30px;
 }
 
 .card {
-  margin: 1rem;
   padding: 1.5rem;
   text-align: left;
   color: inherit;
@@ -87,10 +73,6 @@
   font-size: 1.25rem;
   line-height: 1.5;
 }
-.logo {
-  height: 1em;
-  margin-left: 0.5rem;
-}
 
 .button {
   font-size: 18px;
@@ -109,6 +91,12 @@
     flex-direction: column;
   }
   .card {
-    width: 75%;
+    width: 70%;
+  }
+  .title {
+    font-size: 2rem;
+  }
+  .description {
+    font-size: 1.33rem;
   }
 }
